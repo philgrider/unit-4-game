@@ -38,6 +38,7 @@ $( document ).ready(function() {
         //choose random number for crystals
         crystalOneValue = Math.floor(Math.random() * 12 ) +1;
         crystalSelectOne.attr('value',crystalOneValue);
+        //Insure all crystals have different values....
         do{
             crystalTwoValue = Math.floor(Math.random() * 12 ) +1;   
             crystalSelectTwo.attr('value',crystalTwoValue);   
@@ -57,10 +58,10 @@ $( document ).ready(function() {
         // Inset Random Math into DOM
         computerNumber.text(randomNumber);
 
-        console.log("Crystal 1 Value" + crystalOneValue);
-        console.log("Crystal 2 Value" + crystalTwoValue)
-        console.log("Crystal 3 Value" + crystalThreeValue);
-        console.log("Crystal 4 Value" + crystalFourValue);
+        // console.log("Crystal 1 Value " + crystalOneValue);
+        // console.log("Crystal 2 Value " + crystalTwoValue)
+        // console.log("Crystal 3 Value " + crystalThreeValue);
+        // console.log("Crystal 4 Value " + crystalFourValue);
     }
     function checkScore(){
         
@@ -70,7 +71,7 @@ $( document ).ready(function() {
             gameStart();
 
         }
-        else if(playerTotal >= randomNumber){
+        else if(playerTotal > randomNumber){
             losses += 1;
             playerLosses.text("Losses: " + losses);
             gameStart();
