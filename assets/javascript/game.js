@@ -26,7 +26,7 @@ $( document ).ready(function() {
     var gameStart = function(){
         // chose random number for computer
         randomNumber = Math.floor(Math.random() * (120 - 19) + 19 );
-        console.log("random Number Generator" + randomNumber);
+        //console.log("random Number Generator" + randomNumber);
         //reset player totals to start game
         playerTotal = 0;
         playerNumber.text(playerTotal);
@@ -77,7 +77,7 @@ $( document ).ready(function() {
             gameStart();
         }
 
-        console.log('checking score' + playerTotal)
+        //console.log('checking score ' + playerTotal)
     }
 
     crystalSelect.on('click', function(){
@@ -95,7 +95,7 @@ $( document ).ready(function() {
 
 
 
-        console.log('Player total ' + playerTotal);
+        //console.log('Player total ' + playerTotal);
         checkScore();
         
     });
