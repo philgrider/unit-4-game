@@ -79,12 +79,22 @@ $( document ).ready(function() {
 
         //console.log('checking score ' + playerTotal)
     }
-
-    crystalSelect.on('click', function(){
+    crystalSelectOne.one('click', function(){
+        //gets the value saved in value attribute//
         var crystalValue = $(this).attr('value');
+        //converts that value to number//
         crystalValue = parseInt(crystalValue);
+        // updates the DOM with the  new crystal values//
+        crystalOneTextValue.text(crystalValue);
+    })
+    crystalSelect.on('click', function(){
+        //gets the value saved in value attribute//
+        var crystalValue = $(this).attr('value');
+        //converts that value to number//
+        crystalValue = parseInt(crystalValue);
+        // updates the DOM with the  new crystal values//
 
-        $(this).hasClass('crystal-1') && crystalOneTextValue.text(crystalValue); 
+        // $(this).hasClass('crystal-1') && crystalOneTextValue.text(crystalValue);
         $(this).hasClass('crystal-2') && crystalTwoTextValue.text(crystalValue); 
         $(this).hasClass('crystal-3') && crystalThreeTextValue.text(crystalValue); 
         $(this).hasClass('crystal-4') && crystalFourTextValue.text(crystalValue);  

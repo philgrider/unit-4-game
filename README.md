@@ -5,3 +5,6 @@
 4. You can not possibly need help.
 5. Maintained by me Phillip Grider.
 
+https://github.com/philgrider/unit-4-game
+
+https://philgrider.github.io/unit-4-game/
